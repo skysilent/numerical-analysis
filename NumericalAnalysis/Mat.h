@@ -4,6 +4,7 @@ class Mat
 private:
 	
 	int getIndex(int i, int j);
+	double getItem(int i, int j);
 public:
 	Mat();
 	~Mat();
@@ -12,7 +13,7 @@ public:
 	void zeros(void);
 	Mat operator+(const Mat &a);
 	Mat operator-(const Mat &b);
-	Mat operator*(const Mat &b);
+	Mat operator*(const Mat &b);	
 	double *data;
 	int width; int height; int itemsum;
 };

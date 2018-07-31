@@ -7,6 +7,11 @@ int Mat::getIndex(int i, int j)
 	return i *width + j;
 }
 
+double Mat::getItem(int i, int j)
+{
+	return data[getIndex(i,j)];
+}
+
 Mat::Mat()
 {
 }
@@ -75,4 +80,6 @@ Mat Mat::operator*(const Mat& a)
 	}
 	return mat;
 }
+
+
 
