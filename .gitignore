@@ -3,3 +3,9 @@
 ################################################################################
 
 *.db
+*.opendb
+*.ipch
+/coroutines/Debug/coroutines.tlog
+/coroutines/Debug
+/Debug
+/NumericalAnalysis/Debug
