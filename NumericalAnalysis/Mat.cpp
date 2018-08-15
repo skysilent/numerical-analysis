@@ -81,5 +81,11 @@ Mat Mat::operator*(const Mat& a)
 	return mat;
 }
 
-
-
+Mat & operator+(const Mat & a, const Mat & b)
+{
+	Mat *ret=new Mat(a.width, a.height);
+	for (int i = 0; i < a.itemsum; i++) {
+		ret->data[i] = a.data[i] + b.data[i];
+	}
+	return *ret;
+}

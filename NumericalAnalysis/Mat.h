@@ -12,6 +12,7 @@ public:
 	Mat(const Mat& a);
 	void zeros(void);
 	Mat operator+(const Mat &a);
+	friend Mat&operator+(const Mat&a, const Mat&b);
 	Mat operator-(const Mat &b);
 	Mat operator*(const Mat &b);	
 	double *data;
